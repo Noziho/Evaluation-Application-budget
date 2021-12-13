@@ -6,8 +6,132 @@
     <meta name="viewport" content="width=device-width, 
   user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/assets/CSS/style.css">
 </head>
 <body>
+    <header>
+        <h1>Calcul de budget</h1>
+    </header>
 
+    <main>
+        <div id="container">
+            <div class="containerCategory">
+                <h1>Les dépenses fixes: </h1>
+                <div class="size">
+                    <label for="loyer">Loyer et charges: </label>
+                    <input type="text" id="loyer">
+                </div>
+
+                <div class="size">
+                    <label for="remboursement">Remboursement de crédit: </label>
+                    <input type="text" id="remboursement">
+                </div>
+
+                <div class="size">
+                    <label for="eau">Eau/électricité/gaz: </label>
+                    <input type="text" id="eau">
+                </div>
+                <div class="size">
+                    <label for="tel">Téléphone-Internet: </label>
+                    <input type="text" id="tel">
+                </div>
+                <div class="size">
+                    <label for="assuranceHabitation">Assurance Habitation:  </label>
+                    <input type="text" id="assuranceHabitation">
+                </div>
+
+                <div class="size">
+                    <label for="assuranceVehicules">Assurance(s) véhicule(s):  </label>
+                    <input type="text" id="assuranceVehicules">
+                </div>
+
+                <div class="size">
+                    <label for="mutuelleSante">Mutuelle santé: </label>
+                    <input type="text" id="mutuelleSante">
+                </div>
+
+                <div class="size">
+                    <label for="fraisDeGarde">Frais de garde: </label>
+                    <input type="text" id="fraisDeGarde">
+                </div>
+
+                <div class="size">
+                    <label for="impotSurRevenu">Impôts sur le revenu: </label>
+                    <input type="text" id="impotSurRevenu">
+                </div>
+
+                <div class="size">
+                    <label for="impotLocaux">impôts locaux: </label>
+                    <input type="text" id="impotLocaux">
+                </div>
+
+                <div class="size">
+                    <h2>Les dépenses courantes :</h2>
+                </div>
+
+                <div class="size">
+                    <label for="courses">Courses (budget hebdomadaire - à reporter sur 31 jours) :</label>
+                    <input type="text" id="courses">
+                </div>
+
+                <div class="size">
+                    <label for="essence">Essence/frais de transport en commun (budget hebdomadaire - à reporter sur 31 jours) </label>
+                    <input type="text" id="essence">
+                </div>
+
+                <div class="size">
+                    <label for="activite">Activités sportives et culturelles (budget annuel - à reporter sur 1 mois) </label>
+                    <input type="text" id="activite">
+                </div>
+
+                <div class="size">
+                    <h2>Les dépenses occasionnelles</h2>
+                </div>
+
+                <div class="size">
+                    <label for="sorties">sorties (budget hebdomadaire - à reporter sur 31 jours) </label>
+                    <input type="text" id="sorties">
+                </div>
+
+                <div class="size">
+                    <label for="autresDepense">Les autres dépenses: </label>
+                    <input type="text" id="autresDepense">
+                </div>
+            </div>
+
+            <div class="containerCategory topMargin">
+                <h1>Calcul des recettes: </h1>
+
+                <div class="size">
+                    <label for="salaire">Le salaire: </label>
+                    <input type="text" id="salaire">
+                </div>
+                <div class="size">
+                    <label for="aides">Les aides (allocations, etc) </label>
+                    <input type="text" id="aides">
+                </div>
+
+                <div class="size">
+                    <label for="rente">Les rentes: </label>
+                    <input type="text" id="rente">
+                </div>
+
+                <div class="size">
+                    <label for="autres">Autres: </label>
+                    <input type="text" id="autres">
+                </div>
+            </div>
+
+            <div class="containerCategory">
+                <h1>Calcul de l'épargne</h1>
+                <div id="result" class="size">
+                    <input type="text" id="champLibre">
+                    <button id="calculate">Calculer</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+<script src="/assets/JS/app.js"></script>
 </body>
 </html>
