@@ -33,19 +33,26 @@ document.getElementById("calculate").addEventListener('click', () => {
     counter++;
     if (counter < 2) {
         let resultP = document.createElement("p");
-        resultP.innerHTML = "- " + (parseFloat(rent.value)+ parseFloat(repayment.value) + parseFloat(water.value) + parseFloat(phone.value) +
+        let result = (parseFloat(salary.value) + parseFloat(help.value) + parseFloat(annuities.value) + parseFloat(others.value) - (parseFloat(rent.value)+ parseFloat(repayment.value) + parseFloat(water.value) + parseFloat(phone.value) +
             parseFloat(homeInsurance.value) + parseFloat(vehiculeInsurance.value) + parseFloat(mutualHealth.value) + parseFloat(careExpenses.value) +
             parseFloat(incomeTax.value) + parseFloat(localTax.value) + parseFloat(shopping.value) + parseFloat(gasoline.value) + parseFloat(activities.value)
-            + parseFloat(exit.value) + parseFloat(othersExpanses.value))+ "€";
-        document.getElementById("result").append(resultP);
+            + parseFloat(exit.value) + parseFloat(othersExpanses.value) + parseFloat(saving.value)))+ "€";
+        resultP.innerHTML = result;
+
+        if (result > '0') {
+            console.log(result);
+            resultP.style.color = "green";
+            document.getElementById("result").append(resultP);
+        }
+
+        else {
+            resultP.style.color = "red";
+            document.getElementById("result").append(resultP);
+        }
+
     }
+})
 
-    else {
-        let wrongP = document.createElement('p');
-        wrongP.innerHTML = "Veuillez remplir toute les champs !";
-        wrongP.style.color = "red";
-        document.getElementById("result").append(wrongP);
-    }
-
-
+document.getElementById("resetButton").addEventListener("click", () => {
+    location.reload();
 })

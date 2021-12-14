@@ -12,6 +12,7 @@
     <header>
         <h1>Calcul de budget</h1>
     </header>
+    <p>Veuillez remplir tout les champs, si vous un des champs ne vous correspond pas remplissez le avec 0.</p>
 
     <main>
         <div id="container">
@@ -19,50 +20,50 @@
                 <h1>Les dépenses fixes: </h1>
                 <div class="size">
                     <label for="loyer">Loyer et charges: </label>
-                    <input type="text" id="loyer">
+                    <input type="text" id="loyer" placeholder="0">
                 </div>
 
                 <div class="size">
                     <label for="remboursement">Remboursement de crédit: </label>
-                    <input type="text" id="remboursement">
+                    <input type="text" id="remboursement" placeholder="0">
                 </div>
 
                 <div class="size">
                     <label for="eau">Eau/électricité/gaz: </label>
-                    <input type="text" id="eau">
+                    <input type="text" id="eau" placeholder="0">
                 </div>
                 <div class="size">
                     <label for="tel">Téléphone-Internet: </label>
-                    <input type="text" id="tel">
+                    <input type="text" id="tel" placeholder="0">
                 </div>
                 <div class="size">
                     <label for="assuranceHabitation">Assurance Habitation:  </label>
-                    <input type="text" id="assuranceHabitation">
+                    <input type="text" id="assuranceHabitation" placeholder="0">
                 </div>
 
                 <div class="size">
                     <label for="assuranceVehicules">Assurance(s) véhicule(s):  </label>
-                    <input type="text" id="assuranceVehicules">
+                    <input type="text" id="assuranceVehicules" placeholder="0">
                 </div>
 
                 <div class="size">
                     <label for="mutuelleSante">Mutuelle santé: </label>
-                    <input type="text" id="mutuelleSante">
+                    <input type="text" id="mutuelleSante" placeholder="0">
                 </div>
 
                 <div class="size">
                     <label for="fraisDeGarde">Frais de garde: </label>
-                    <input type="text" id="fraisDeGarde">
+                    <input type="text" id="fraisDeGarde" placeholder="0">
                 </div>
 
                 <div class="size">
                     <label for="impotSurRevenu">Impôts sur le revenu: </label>
-                    <input type="text" id="impotSurRevenu">
+                    <input type="text" id="impotSurRevenu" placeholder="0">
                 </div>
 
                 <div class="size">
                     <label for="impotLocaux">impôts locaux: </label>
-                    <input type="text" id="impotLocaux">
+                    <input type="text" id="impotLocaux" placeholder="0">
                 </div>
 
                 <div class="size">
@@ -71,17 +72,17 @@
 
                 <div class="size">
                     <label for="courses">Courses (budget hebdomadaire - à reporter sur 31 jours) :</label>
-                    <input type="text" id="courses">
+                    <input type="text" id="courses" placeholder="0">
                 </div>
 
                 <div class="size">
                     <label for="essence">Essence/frais de transport en commun (budget hebdomadaire - à reporter sur 31 jours) </label>
-                    <input type="text" id="essence">
+                    <input type="text" id="essence" placeholder="0">
                 </div>
 
                 <div class="size">
                     <label for="activite">Activités sportives et culturelles (budget annuel - à reporter sur 1 mois) </label>
-                    <input type="text" id="activite">
+                    <input type="text" id="activite" placeholder="0">
                 </div>
 
                 <div class="size">
@@ -89,13 +90,13 @@
                 </div>
 
                 <div class="size">
-                    <label for="sorties">sorties (budget hebdomadaire - à reporter sur 31 jours) </label>
-                    <input type="text" id="sorties">
+                    <label for="sorties">Sorties (budget hebdomadaire - à reporter sur 31 jours) </label>
+                    <input type="text" id="sorties" placeholder="0">
                 </div>
 
                 <div class="size">
                     <label for="autresDepense">Les autres dépenses: </label>
-                    <input type="text" id="autresDepense">
+                    <input type="text" id="autresDepense" placeholder="0">
                 </div>
             </div>
 
@@ -104,29 +105,33 @@
 
                 <div class="size">
                     <label for="salaire">Le salaire: </label>
-                    <input type="text" id="salaire">
+                    <input type="text" id="salaire" placeholder="0">
                 </div>
                 <div class="size">
                     <label for="aides">Les aides (allocations, etc) </label>
-                    <input type="text" id="aides">
+                    <input type="text" id="aides" placeholder="0">
                 </div>
 
                 <div class="size">
                     <label for="rente">Les rentes: </label>
-                    <input type="text" id="rente">
+                    <input type="text" id="rente" placeholder="0">
                 </div>
 
                 <div class="size">
                     <label for="autres">Autres: </label>
-                    <input type="text" id="autres">
+                    <input type="text" id="autres" placeholder="0">
                 </div>
             </div>
 
             <div class="containerCategory">
                 <h1>Calcul de l'épargne</h1>
                 <div id="result" class="size">
-                    <input type="text" id="champLibre">
+                    <input type="text" id="champLibre" placeholder="0">
                     <button id="calculate">Calculer</button>
+                </div>
+
+                <div id="containerResetButton">
+                    <button id="resetButton">Reset</button>
                 </div>
             </div>
         </div>
