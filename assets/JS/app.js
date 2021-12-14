@@ -1,3 +1,4 @@
+// a counter for click one time on result.
 let counter = 0;
 // Fixed expenses.
 const rent = document.getElementById("loyer");
@@ -29,6 +30,7 @@ const others = document.getElementById("autres");
 //Saving.
 const saving = document.getElementById("champLibre");
 
+// an addEventListener for calculate all values, and print a <p> to the end of the page who print the final result.
 document.getElementById("calculate").addEventListener('click', () => {
     counter++;
     if (counter < 2) {
@@ -53,6 +55,7 @@ document.getElementById("calculate").addEventListener('click', () => {
     }
 })
 
+// an eventListener for reset button simply, a reload page.
 document.getElementById("resetButton").addEventListener("click", () => {
     location.reload();
 })
